@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+
+[class*="col"] { 
+    float: left;
+}
+
+.row::after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+}
+
+body {
+    background-color: #fdf6e3;
+    background-image: url("../images/key-lime-background.jpg");
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #b8860b;
+    text-shadow: 1px 1px 2px #8b6914;
+    font-style: normal;
+}
+
+p {
+    color: #7a3b5c;
+}
+
+li {
+    color: #1a1a2e;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 1rem;
+    text-align: left;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: right;
+    margin-top: auto;
+}
+
+.col {
+    padding: 1rem;
+}
+
+span {
+    font-style: italic;
+    color: #7a3b5c;
+}
+
+#id-content {
+    padding: 0.5rem;
+}
